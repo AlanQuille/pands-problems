@@ -13,10 +13,6 @@ The body mass index (**bmi**) is then calculated and return using the following 
 
 The function then returns bmi formatted to two decimal places using the **round** function.
 
-Strikethrough:
-~~strikethrough~~
-
-
 3-secondstring.py
 -------
 The script is designed to take a sentence the user inputs, turn it backwards and take only every second letter starting from the last character and ending with the first one. So for instance "Backwards" becomes "srwc"
