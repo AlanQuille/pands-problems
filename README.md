@@ -28,7 +28,7 @@ The resulting string **output_string** is printed to the screen using the **prin
 -------
 This script sets the variable **any\_pos\_int** using the user's input. The input is first convert to an integer using the **int** function.
 
-The script runs an if statement whcih runs as follows:
+The script runs an if statement which runs as follows:
 
  If **any\_pos\_int** is not an integer, the user is informed using the **print** function which prints a warning to the screen. If **any\_pos_int** is an integer then **any\_pos\_int** is printed to the screen with a blank space afterwards and a while loop is run. 
 
