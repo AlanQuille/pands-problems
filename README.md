@@ -27,7 +27,7 @@ The resulting string **output_string** is printed to the screen using the **prin
 4-collatz.py
 -------
 
-This script is designed to take a positive integer and either divide it into by two if it is even or multiply it by three and add 1 otherwise. In either case the result is printed to the screen. This continues until the positive integer becomes 1 or less.
+This script is designed to take a positive integer and either divide it by two if it is even or multiply it by three and add 1 otherwise. In either case the result is printed to the screen. This continues until the positive integer becomes 1 or less.
 
 This script sets the variable **any\_pos\_int** using the user's input. The input is first convert to an integer using the **int** function.
 
