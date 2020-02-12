@@ -47,7 +47,7 @@ This script uses the **datetime** class in python to get the current day as a nu
 
 Two lists are created which contain integers from 0-5 and 6-7. These correspond to weekdays (where 0 is Monday and 5 is Friday) and weekend days (6 is Saturday and 7 is Sunday).
 
-The **today** and **weekday** functions are used to get the current date and then convert that date into a number betwen 0 and 7, which indicates what day it is in the week.
+The **today** and **weekday** functions in the **datetime** class are used to get the current date and then convert that date into a number betwen 0 and 7, which indicates what day it is in the week.
 
 The programme then uses an **if** statement to check whether that is in the weekday list or the weekend day list. If it is the former, then it prints "Yes, unfortunately today is a weekday." Otherwise it prints "It is the weekend, yay!"
 
