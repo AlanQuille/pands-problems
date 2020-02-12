@@ -4,7 +4,7 @@ import datetime
 
 # These are numbers indicating which weekday
 # it is by number where 0 is Monday and 
-# 5 is Friday
+# 4 is Friday
 weekdaynos = [0, 1, 2, 3, 4]
 
 # This uses the today and weekday functions
