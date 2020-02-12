@@ -27,7 +27,7 @@ The resulting string **output_string** is printed to the screen using the **prin
 4-collatz.py
 -------
 
-This script is designed to take a positive integer and either divide it by two if it is even or multiply it by three and add 1 otherwise. In either case the result is printed to the screen. This continues until the positive integer becomes 1 or less.
+This script is designed to take a positive integer and either divide it by two if it is even or multiply it by three and add 1 otherwise. In either case the result is printed to the screen. This continues until the positive integer becomes 1.
 
 This script sets the variable **any\_pos\_int** using the user's input. The input is first convert to an integer using the **int** function.
 
@@ -35,7 +35,7 @@ The script runs an if statement which runs as follows:
 
  If **any\_pos\_int** is not an integer, the user is informed using the **print** function which prints a warning to the screen. If **any\_pos_int** is an integer then **any\_pos\_int** is printed to the screen with a blank space afterwards and a while loop is run. 
 
-This loop terminates if **any\_pos\_int** becomes equal or less than 1. In the loop, it checks whether **any\_pos\_int** divides evenly into 2 (i.e. is an even number). If it does, it divides **any\_pos\_int** by 2 and converts it to an integer using the **int** function. If it does not divide evenly into 2, then **any\_pos_int** is trebled and 1 is added to the result, which is then converted to an integer.
+This loop terminates if **any\_pos\_int** becomes equal to 1. In the loop, it checks whether **any\_pos\_int** divides evenly into 2 (i.e. is an even number). If it does, it divides **any\_pos\_int** by 2 and converts it to an integer using the **int** function. If it does not divide evenly into 2, then **any\_pos_int** is trebled and 1 is added to the result, which is then converted to an integer.
 
 Before the loop terminates **any\_pos_int** is printed to the screen with a blank space afterwards.
 
