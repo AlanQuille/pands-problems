@@ -5,7 +5,7 @@ import datetime
 # These are numbers indicating which weekday
 # it is by number where 0 is Monday and 
 # 5 is Friday
-weekdaynos = [0, 1, 2, 3, 4, 5]
+weekdaynos = [0, 1, 2, 3, 4]
 
 # This uses the today and weekday functions
 # in the datetime class to get the current
@@ -16,8 +16,8 @@ weekdaynos = [0, 1, 2, 3, 4, 5]
 dayno = datetime.datetime.today().weekday()
 
 # This is to test whether the correct statement will 
-# be printed if dayno = 7 (weekend) or 3 (weekday)
-# dayno = 7
+# be printed if dayno = 6 (weekend) or 3 (weekday)
+# dayno = 6
 # dayno = 3
 
 # This if statement prints out the appropriate 
