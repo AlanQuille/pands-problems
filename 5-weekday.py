@@ -7,11 +7,6 @@ import datetime
 # 5 is Friday
 weekdaynos = [0, 1, 2, 3, 4, 5]
 
-# These are numbers indicating which weekend day
-# it is by number where 6 is Saturday and
-# 7 is Sunday
-weekenddays= [6, 7]
-
 # This uses the today and weekday functions
 # in the datetime class to get the current
 # date (today) and then get the number of
