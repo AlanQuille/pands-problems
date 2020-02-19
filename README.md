@@ -7,7 +7,7 @@ The script is designed to calculate body mass index or BMI.
 
 This script sets the variables **weight** and **height** using the user's input. The user's input is first converted to floating point numbers using the **float** function.
 
-The height is converted from cm to m<sup>2</sup> using the following formula: height = (height/100)<sup>2</sup>
+The height is converted from cm to m<sup>2</sup> using the following formula: **height** = (**height**/100)<sup>2</sup>
 
 The body mass index (**bmi**) is then calculated and returned using the following formula: bmi = weight/height
 
@@ -19,7 +19,7 @@ The script is designed to take a sentence the user inputs, turn it backwards and
 
 This script sets the variable **input_string** using the user's input. The input is first converted to a string using the **str** function.
 
-The **output_string** variable is set using a slice of the string **input_string**. The slice goes from the last letter to the first letter in steps of 2 backwards.
+The **output_string** variable is set using a slice of the string **input\_string**. The slice goes from the last letter to the first letter in steps of 2 backwards.
 
 The resulting string **output_string** is printed to the screen using the **print** function.
 
@@ -50,6 +50,34 @@ Two lists are created which contain integers from 0-4 and 5-6. These correspond 
 The **today** and **weekday** functions in the **datetime** class are used to get the current date and then convert that date into a number betwen 0 and 6, which indicates what day it is in the week.
 
 The programme then uses an **if** statement to check whether that is in the weekday list or the weekend day list. If it is the former, then it prints "Yes, unfortunately today is a weekday." Otherwise it prints "It is the weekend, yay!"
+
+
+6-squareroot.py
+-------
+This script takes input from the user, converts it to a floating point number and gets the absolute value of it so that strings and non-positive numbers will be rejected. The result is set as the variable **pos**.
+
+The **pos** variable is used as the first argument for the **newton\_root** function from the module **functions** (described in the **functions.py** section in this file). The **newton_root** function will find the approximate square root for this argument.
+
+The second argument is the number of iterations for which the **newton_root** function will run, in this case 5. 
+
+This string is then printed to the screen: "The square root of 14.5 is approx. ". **pos** is printed to the screen directly after this string.
+
+
+
+functions.py
+--------
+
+**newton_root**(input, iterations) 
+
+This function gets the square root of the variable input and employs the Newton-Raphson method for finding approximate roots to the following equation: f(x) = x<sup>2</sup>-**input**. This is identical to approximating the square root of **input**. 
+
+To get an initial guess for the Newton-Raphson method, **input** is divided by 4 and set as the variable **init**.
+
+The Newton-Raphson method is employed for **iterations** number of iterations  using the following formula: **init** = **init** -(**init**<sup>2</sup> - **input**)/(2 **init**) using a **while** loop. This loop terminates when the variable **i** reaches **iterations**. 
+
+Just before the loop terminates, **i** is incremented so that **i** will evantually reach **iterations** and the function will not be stuck in an endless loop. 
+
+The function then returns **init** which is the approximate square root of **input**
 
 
 
