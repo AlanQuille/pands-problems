@@ -62,7 +62,7 @@ This script takes input from the user, converts it to a floating point number an
 
 The **pos** variable is used as the first argument for the **newton\_root** function from the module **functions** (described in the **functions.py** section at the bottom of this file). 
 
-The **newton\_root** function will find the approximate square root for **pos**. The second argument is the number of iterations for which the **newton\_root** function will run, in this case 5. 
+The **newton\_root** function will find the approximate square root for **pos**. The second argument is the number of iterations for which the **newton\_root** function will run, in this case 10. 
 
 
 The result is rounded to 1 decimal place using the **round** function and set as the variable **result**
