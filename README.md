@@ -73,9 +73,11 @@ This function gets the square root of the variable input and employs the Newton-
 
 To get an initial guess for the Newton-Raphson method, **input** is divided by 4 and set as the variable **init**.
 
-The Newton-Raphson method is employed for **iterations** number of iterations  using the following formula: **init** = **init** -(**init**<sup>2</sup> - **input**)/(2 **init**) using a **while** loop. This loop terminates when the variable **i** reaches **iterations**. 
+The Newton-Raphson method is employed for **iterations** number of iterations  using the following formula in a **while** loop: 
 
-Just before the loop terminates, **i** is incremented so that **i** will evantually reach **iterations** and the function will not be stuck in an endless loop. 
+**init** = **init** -(**init**<sup>2</sup> - **input**)/(2 **init**)
+
+ This loop terminates when the variable **i** reaches **iterations**. Just before the loop terminates, **i** is incremented so that **i** will evantually reach **iterations** and the function will not be stuck in an endless loop. 
 
 The function then returns **init** which is the approximate square root of **input**
 
