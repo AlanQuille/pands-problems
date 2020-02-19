@@ -95,7 +95,7 @@ The Newton-Raphson method is employed for **iterations** number of iterations  u
 
 **init** = **init** -((**init**<sup>2</sup> - **input**)/(2 **init**))
 
- This loop terminates when the variable **i** reaches **iterations**. Just before the loop terminates, **i** is incremented so that **i** will evantually reach **iterations** and the function will not be stuck in an endless loop. 
+ This loop terminates when the variable **i** reaches **iterations**. Just before the end of the loop, **i** is incremented so that **i** will evantually reach **iterations** and the function will not be stuck in an endless loop. 
 
 The function then returns **init** which is the approximate square root of **input**
 
