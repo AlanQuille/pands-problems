@@ -7,9 +7,13 @@ The script is designed to calculate body mass index or BMI.
 
 This script sets the variables **weight** and **height** using the user's input. The user's input is first converted to floating point numbers using the **float** function.
 
-The height is converted from cm to m<sup>2</sup> using the following formula: **height** = (**height**/100)<sup>2</sup>
+The height is converted from cm to m<sup>2</sup> using the following formula:
 
-The body mass index (**bmi**) is then calculated and returned using the following formula: bmi = weight/height
+ **height** = (**height**/100)<sup>2</sup>
+
+The body mass index (**bmi**) is then calculated and returned using the following formula: 
+
+**bmi** = **weight**/**height**
 
 The function then returns bmi formatted to two decimal places using the **round** function.
 
