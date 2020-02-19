@@ -60,11 +60,15 @@ The programme then uses an **if** statement to check whether that is in the week
 -------
 This script takes input from the user, converts it to a floating point number and gets the absolute value of it so that strings and non-positive numbers will be rejected. The result is set as the variable **pos**.
 
-The **pos** variable is used as the first argument for the **newton\_root** function from the module **functions** (described in the **functions.py** section at the bottom of this file). The **newton_root** function will find the approximate square root for this argument.
+The **pos** variable is used as the first argument for the **newton\_root** function from the module **functions** (described in the **functions.py** section at the bottom of this file). 
 
-The second argument is the number of iterations for which the **newton_root** function will run, in this case 5. 
+The **newton\_root** function will find the approximate square root for **pos**. The second argument is the number of iterations for which the **newton\_root** function will run, in this case 5. 
 
-This string is then printed to the screen: "The square root of 14.5 is approx. ". **pos** is printed to the screen directly after this string.
+
+The result is rounded to 1 decimal place using the **round** function and set as the variable **result**
+
+
+This string is then printed to the screen: "The square root of **pos** is approx. ". **result** is printed to the screen directly after this string.
 
 
 
@@ -73,13 +77,23 @@ functions.py
 
 **newton_root**(input, iterations) 
 
-This function gets the square root of the variable input and employs the Newton-Raphson method for finding approximate roots to the following equation: f(x) = x<sup>2</sup>-**input**. This is identical to approximating the square root of **input**. 
+This function gets the square root of the variable input and employs the Newton-Raphson method for finding approximate roots to the following equation:
+
+ f(x) = x<sup>2</sup>-**input**. 
+
+This is identical to approximating the square root of **input**. The formula employed for the Newton-Raphson method in its general form is:
+
+x<sub>n+1</sub> = x<sub>n</sub> - f(x<sub>0</sub>)/f'(x<sub>n</sub>)
+
+...where x<sub>n</sub> is the n<sup>th</sup> approximation, x<sub>0</sub> is the initial guess, f(x<sub>0</sub>) is the function f at the intial guess, f'(x<sub>n</sub>) is the derivative of the function at the n<sup>th</sup> approximation. In this case:
+
+f'(x) = 2x
 
 To get an initial guess for the Newton-Raphson method, **input** is divided by 4 and set as the variable **init**.
 
 The Newton-Raphson method is employed for **iterations** number of iterations  using the following formula in a **while** loop: 
 
-**init** = **init** -(**init**<sup>2</sup> - **input**)/(2 **init**)
+**init** = **init** -((**init**<sup>2</sup> - **input**)/(2 **init**))
 
  This loop terminates when the variable **i** reaches **iterations**. Just before the loop terminates, **i** is incremented so that **i** will evantually reach **iterations** and the function will not be stuck in an endless loop. 
 

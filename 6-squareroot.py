@@ -11,7 +11,7 @@ pos= abs(float(input("Please enter a positive number: ")))
 # This applies the Newton_Raphson method for finding square roots
 # for 5 iterations (should be sufficiently accurate for 1 decimal place)
 # and rounds the result to 1 decimal place using the round function
-pos = round(newton_root(pos, 5), 1)
+result = round(newton_root(pos, 5), 1)
 
 # This prints the result to the screen
-print("The square root of 14.5 is approx. {}".format(pos))
+print("The square root of {} is approx. {}".format(pos, result))
