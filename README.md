@@ -8,8 +8,9 @@ The script is designed to calculate body mass index or BMI.
 This script sets the variables **weight** and **height** using the user's input. The user's input is first converted to floating point numbers using the **float** function.
 
 The height is converted from cm to m<sup>2</sup> using the following formula:
-
+\begin{equation}
  **height** = (**height**/100)<sup>2</sup>
+\end{equation}
 
 The body mass index (**bmi**) is then calculated and returned using the following formula: 
 
@@ -70,7 +71,17 @@ The result is rounded to 1 decimal place using the **round** function and set as
 
 This string is then printed to the screen: "The square root of **pos** is approx. ". **result** is printed to the screen directly after this string.
 
+7-es.py
+-------
+This script takes input from the command line to specify a file to be opened. When it opens the file it goes through the file character by character and counts how many "e"'s (lower case e's) are present in the text file.
 
+This script uses the **sys** module so that it can take an argument from the command line as an input variable, which is called **sys.argv[1]** (i.e. the second element of the array of input arguments, the first one being **7-es.py**). This input variable is the string which designates which file is to be opened by a script. A test file is created with 6 "e"'s in total called "e.txt".
+
+The function is called by entering "python 7-es.py e.txt" in this instance. The **open** function is used to open the file and each line is saved to a file object. This file object is composed of a series of strings, each string representing each line of the text document that is opened.
+
+A **for** loop is used to iterate through each line (called **line**) of the text document. Another **for** loop iterates through each character (called **ch**) of the text document. A variable called **ecount** (which is set to 0  at the start of the script) is incremented every time the **ch** matches the character 'e' using an **if** statement.
+
+At the end of the script, **ecount** is output to the screen using the **print** function.
 
 functions.py
 --------
