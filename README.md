@@ -74,7 +74,7 @@ This string is then printed to the screen: "The square root of **pos** is approx
 -------
 This script takes input from the command line to specify a file to be opened. When it opens the file it goes through the file character by character and counts how many "e"'s (lower case e's) are present in the text file.
 
-This script uses the **sys** module so that it can take an argument from the command line as an input variable, which is called **sys.argv[1]** (i.e. the second element of the array of input arguments, the first one being **7-es.py**). This input variable is the string which designates which file is to be opened by a script. A test file is created with 6 "e"'s in total called "e.txt".
+This script uses the **sys** module so that it can take an argument from the command line as an input variable, which is called **sys.argv[1]** (i.e. the second element of the array of input arguments, the first one being **7-es.py**). This input variable is the string which designates which file is to be opened by a script. A test file is created with 6 "e"'s in total called "e.txt" (moby-dick.txt is also present for testing, it returns correct number of 'e's)
 
 The function is called by entering "python 7-es.py e.txt" in this instance. The **open** function is used to open the file and each line is saved to a file object. This file object is composed of a series of strings, each string representing each line of the text document that is opened.
 
