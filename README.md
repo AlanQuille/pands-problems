@@ -97,6 +97,20 @@ A **for** loop is used to iterate through each line (called **line**) of the tex
 
 At the end of the script, **ecount** is output to the screen using the **print** function.
 
+Topic 8
+--------
+
+**Exercise file:** 8-plots.py
+
+The script imports the **numpy** module and the **pyplot** package (from the module **matplotlib**) using **import**. 
+
+A numpy array is created using the **linspace** function and is set as **x**. This array goes from a minimum of 0 and a maximum of 4 in steps of 0.0816 (i.e. 4/49).  
+
+The numpy arrays **x**, **x**<sup>2</sup> and **x**<sup>3</sup> are plotted on the same axes using the function **plot** taken from the the **matplotlib.pyplot** package. They are given appropriate labels, distinct colors, markers and line dashing so they can be differentiated.
+
+A legend is added to the plot and the **show** function from **pyplot** is used to output the plot to the screen.
+
+
 functions.py
 --------
 
