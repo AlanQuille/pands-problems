@@ -1,8 +1,11 @@
 Weekly tasks
 =======
 
-2-bmi.py
+Topic 2
 -------
+
+**Exercise file:** 2-bmi.py
+
 The script is designed to calculate body mass index or BMI.
 
 This script sets the variables **weight** and **height** using the user's input. The user's input is first converted to floating point numbers using the **float** function.
@@ -17,8 +20,11 @@ The body mass index (**bmi**) is then calculated and returned using the followin
 
 The function then returns bmi formatted to two decimal places using the **round** function.
 
-3-secondstring.py
+Topic 3
 -------
+
+**Exercise file:** 3-secondstring.py
+
 The script is designed to take a sentence the user inputs, turn it backwards and take only every second letter starting from the last character and ending with the first one. So for instance "Backwards" becomes "srwc"
 
 This script sets the variable **input_string** using the user's input. The input is first converted to a string using the **str** function.
@@ -28,8 +34,10 @@ The **output_string** variable is set using a slice of the string **input\_strin
 The resulting string **output_string** is printed to the screen using the **print** function.
 
 
-4-collatz.py
+Topic 4
 -------
+
+**Exercise file:** 4-collatz.py
 
 This script is designed to take a positive integer and either divide it by two if it is even or multiply it by three and add 1 otherwise. In either case the result is printed to the screen. This continues until the positive integer becomes 1.
 
@@ -43,9 +51,10 @@ This loop terminates if **any\_pos\_int** becomes equal to 1. In the loop, it ch
 
 Before the loop terminates **any\_pos_int** is printed to the screen with a blank space afterwards.
 
-
-5-weekday.py
+Topic 5
 -------
+
+**Exercise file:** 5-weekday.py
 
 This script uses the **datetime** class in python to get the current day as a number between 0 and 6 and then tells the user whether that corresponds to a weekday or not.
 
@@ -56,8 +65,11 @@ The **today** and **weekday** functions in the **datetime** class are used to ge
 The programme then uses an **if** statement to check whether that is in the weekday list or the weekend day list. If it is the former, then it prints "Yes, unfortunately today is a weekday." Otherwise it prints "It is the weekend, yay!"
 
 
-6-squareroot.py
+Topic 6
 -------
+
+**Exercise file:** 6-squareroot.py
+
 This script takes input from the user, converts it to a floating point number and gets the absolute value of it so that strings and non-positive numbers will be rejected. The result is set as the variable **pos**.
 
 The **pos** variable is used as the first argument for the **newton\_root** function from the module **functions** (described in the **functions.py** section at the bottom of this file). 
@@ -70,8 +82,11 @@ The result is rounded to 1 decimal place using the **round** function and set as
 
 This string is then printed to the screen: "The square root of **pos** is approx. ". **result** is printed to the screen directly after this string.
 
-7-es.py
+Topic 7
 -------
+
+**Exercise file:** 7-es.py
+
 This script takes input from the command line to specify a file to be opened. When it opens the file it goes through the file character by character and counts how many "e"'s (lower case e's) are present in the text file.
 
 This script uses the **sys** module so that it can take an argument from the command line as an input variable, which is called **sys.argv[1]** (i.e. the second element of the array of input arguments, the first one being **7-es.py**). This input variable is the string which designates which file is to be opened by a script. A test file is created with 6 "e"'s in total called "e.txt" (moby-dick.txt is also present for testing, it returns correct number of 'e's)
@@ -84,6 +99,8 @@ At the end of the script, **ecount** is output to the screen using the **print**
 
 functions.py
 --------
+
+**Exercise file:** 2-bmi.py
 
 **newton_root**(input, iterations) 
 
