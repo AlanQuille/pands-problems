@@ -2,11 +2,6 @@
 # class with functions handling dates and times
 import datetime
 
-# These are numbers indicating which weekday
-# it is by number where 0 is Monday and 
-# 4 is Friday
-weekdaynos = [0, 1, 2, 3, 4]
-
 # This uses the today and weekday functions
 # in the datetime class to get the current
 # date (today) and then get the number of
@@ -23,7 +18,7 @@ dayno = datetime.datetime.today().weekday()
 # This if statement prints out the appropriate 
 # statement if the current day is a weekday
 # i.e. dayno is between 0 and 4
-if dayno in weekdaynos:
+if dayno <= 4:
     print("Yes, unfortunately today is a weekday.")
 # This else statement prints out the
 # appropriate statement if the current day is
