@@ -8,14 +8,12 @@ ecount = 0
 
 # This opens up the text file the user specifies
 # in the command line after "python 7-es.py"
-# for reading (indicated by 'r')
+# for reading (indicated by 'r') as f
 with open(sys.argv[1], 'r') as f:
-    # This loops over each line in the text file
+    # This loops over each char in each line in f
     for line in f:
-        # This loops over each character in each line
         for ch in line:
-            # If the character is an 'e', then ecount
-            # is incremented
+            # If the character is an 'e', increment ecount
             if(ch=='e'):
                 ecount += 1
 

@@ -1,5 +1,6 @@
 # weight in kg, make sure it's a float
 weight = float(input("Enter weight: "))
+
 # height in cm, make sure it's a float
 height = float(input("Enter height: "))
 
