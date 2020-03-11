@@ -15,4 +15,6 @@ else:
         else:
             any_pos_int = int((any_pos_int * 3) + 1)
             
+        # print any_pos_int to screen
+        # with blank space instead of newline.
         print(any_pos_int, end=' ')
