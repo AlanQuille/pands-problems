@@ -100,8 +100,6 @@ At the end of the script, **ecount** is output to the screen using the **print**
 functions.py
 --------
 
-**Exercise file:** 2-bmi.py
-
 **newton_root**(input, iterations) 
 
 This function gets the square root of the variable input and employs the Newton-Raphson method for finding approximate roots to the following equation:
