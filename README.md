@@ -1,8 +1,7 @@
 Weekly tasks
-=======
-
-Topic 2
--------
+=======    
+Topic 2: Statements
+-------   
 
 **Exercise file:** 2-bmi.py
 
@@ -20,7 +19,7 @@ The body mass index (**bmi**) is then calculated and returned using the followin
 
 The function then returns bmi formatted to two decimal places using the **round** function.
 
-Topic 3
+Topic 3: State
 -------
 
 **Exercise file:** 3-secondstring.py
@@ -34,7 +33,7 @@ The **output_string** variable is set using a slice of the string **input\_strin
 The resulting string **output_string** is printed to the screen using the **print** function.
 
 
-Topic 4
+Topic 4: Controlling the flow
 -------
 
 **Exercise file:** 4-collatz.py
@@ -51,7 +50,7 @@ This loop terminates if **any\_pos\_int** becomes equal to 1. In the loop, it ch
 
 Before the loop terminates **any\_pos_int** is printed to the screen with a blank space afterwards.
 
-Topic 5
+Topic 5: Data
 -------
 
 **Exercise file:** 5-weekday.py
@@ -65,7 +64,7 @@ The **today** and **weekday** functions in the **datetime** class are used to ge
 The programme then uses an **if** statement to check whether that is in the weekday list or the weekend day list. If it is the former, then it prints "Yes, unfortunately today is a weekday." Otherwise it prints "It is the weekend, yay!"
 
 
-Topic 6
+Topic 6: Functions
 -------
 
 **Exercise file:** 6-squareroot.py
@@ -82,7 +81,7 @@ The result is rounded to 1 decimal place using the **round** function and set as
 
 This string is then printed to the screen: "The square root of **pos** is approx. ". **result** is printed to the screen directly after this string.
 
-Topic 7
+Topic 7: Files
 -------
 
 **Exercise file:** 7-es.py
@@ -97,7 +96,7 @@ A **for** loop is used to iterate through each line (called **line**) of the tex
 
 At the end of the script, **ecount** is output to the screen using the **print** function.
 
-Topic 8
+Topic 8: Looking ahead
 --------
 
 **Exercise file:** 8-plots.py
