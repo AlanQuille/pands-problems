@@ -6,11 +6,11 @@ import matplotlib.pyplot as plt
 x = np.linspace(0, 4, 50)
 
 # Plots x versus x
-plt.plot(x, x, 'g.', label="x", marker='x')
+plt.plot(x, x, 'g.', label="f(x)=x", marker='x')
 # Plots x versus x^2
-plt.plot(x, x**2, '-b.', label="x^2", marker='d')
+plt.plot(x, x**2, '-b.', label="g(x)=x^2", marker='d')
 # Plots x versus x^3
-plt.plot(x, x**3, '--r.', label="x^3")
+plt.plot(x, x**3, '--r.', label="h(x)=x^3")
 # Creates a plot legend
 leg = plt.legend()
 
