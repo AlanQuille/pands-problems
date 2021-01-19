@@ -24,7 +24,7 @@ Topic 3: State
 
 **Exercise file:** 3-secondstring.py
 
-The script is designed to take a sentence the user inputs, turn it backwards and take only every second letter starting from the last character and ending with the first one. So for instance "Backwards" becomes "srwc"
+The script is designed to take a sentence the user inputs, turn it backwards and take only every second letter starting from the last character and ending with the first one. So, for instance, "Backwards" becomes "srwc"
 
 This script sets the variable **input_string** using the user's input. The input is first converted to a string using the **str** function.
 
@@ -40,13 +40,13 @@ Topic 4: Controlling the flow
 
 This script is designed to take a positive integer and either divide it by two if it is even or multiply it by three and add 1 otherwise. In either case the result is printed to the screen. This continues until the positive integer becomes 1.
 
-This script sets the variable **any\_pos\_int** using the user's input. The input is first convert to an integer using the **int** function.
+This script sets the variable **any\_pos\_int** using the user's input. The input is first converted to an integer using the **int** function.
 
 The script runs an if statement which runs as follows:
 
  If **any\_pos\_int** is not an integer, the user is informed using the **print** function which prints a warning to the screen. If **any\_pos_int** is an integer then **any\_pos\_int** is printed to the screen with a blank space afterwards and a while loop is run. 
 
-This loop terminates if **any\_pos\_int** becomes equal to 1. In the loop, it checks whether **any\_pos\_int** divides evenly into 2 (i.e. is an even number). If it does, it divides **any\_pos\_int** by 2 and converts it to an integer using the **int** function. If it does not divide evenly into 2, then **any\_pos_int** is trebled and 1 is added to the result, which is then converted to an integer.
+This loop terminates if **any\_pos\_int** becomes equal to 1. In the loop, it checks whether **any\_pos\_int** divides evenly into 2 (i.e., is an even number). If it does, it divides **any\_pos\_int** by 2 and converts it to an integer using the **int** function. If it does not divide evenly into 2, then **any\_pos_int** is trebled and 1 is added to the result, which is then converted to an integer.
 
 Before the loop terminates **any\_pos_int** is printed to the screen with a blank space afterwards.
 
@@ -61,7 +61,7 @@ Two lists are created which contain integers from 0-4 and 5-6. These correspond 
 
 The **today** and **weekday** functions in the **datetime** class are used to get the current date and then convert that date into a number betwen 0 and 6, which indicates what day it is in the week.
 
-The programme then uses an **if** statement to check whether that is in the weekday list or the weekend day list. If it is the former, then it prints "Yes, unfortunately today is a weekday." Otherwise it prints "It is the weekend, yay!"
+The programme then uses an **if** statement to check whether that is in the weekday list or the weekend day list. If it is the former, then it prints "Yes, unfortunately today is a weekday." Otherwise, it prints "It is the weekend, yay!"
 
 
 Topic 6: Functions
@@ -69,7 +69,7 @@ Topic 6: Functions
 
 **Exercise file:** 6-squareroot.py
 
-This script takes input from the user, converts it to a floating point number and gets the absolute value of it so that strings and non-positive numbers will be rejected. The result is set as the variable **pos**.
+This script takes input from the user, converts it to a floating-point number and gets the absolute value of it so that strings and non-positive numbers will be rejected. The result is set as the variable **pos**.
 
 The **pos** variable is used as the first argument for the **newton\_root** function from the module **functions** (described in the **functions.py** section at the bottom of this file). 
 
@@ -86,9 +86,9 @@ Topic 7: Files
 
 **Exercise file:** 7-es.py
 
-This script takes input from the command line to specify a file to be opened. When it opens the file it goes through the file character by character and counts how many "e"'s (lower case e's) are present in the text file.
+This script takes input from the command line to specify a file to be opened. When it opens the file, it goes through the file character by character and counts how many "e"'s (lower case e's) are present in the text file.
 
-This script uses the **sys** module so that it can take an argument from the command line as an input variable, which is called **sys.argv[1]** (i.e. the second element of the array of input arguments, the first one being **7-es.py**). This input variable is the string which designates which file is to be opened by a script. A test file is created with 6 "e"'s in total called "e.txt" (moby-dick.txt is also present for testing, it returns correct number of 'e's)
+This script uses the **sys** module so that it can take an argument from the command line as an input variable, which is called **sys.argv[1]** (i.e., the second element of the array of input arguments, the first one being **7-es.py**). This input variable is the string which designates which file is to be opened by a script. A test file is created with 6 "e"'s in total called "e.txt" (moby-dick.txt is also present for testing, it returns correct number of 'e's)
 
 The function is called by entering "python 7-es.py e.txt" in this instance. The **open** function is used to open the file and each line is saved to a file object. This file object is composed of a series of strings, each string representing each line of the text document that is opened.
 
@@ -103,7 +103,7 @@ Topic 8: Looking ahead
 
 The script imports the **numpy** module and the **pyplot** package (from the module **matplotlib**) using **import**. 
 
-A numpy array is created using the **linspace** function and is set as **x**. This array goes from a minimum of 0 and a maximum of 4 in steps of 0.0816 (i.e. 4/49).  
+A numpy array is created using the **linspace** function and is set as **x**. This array goes from a minimum of 0 and a maximum of 4 in steps of 0.0816 (i.e., 4/49).  
 
 The numpy arrays **x**, **x**<sup>2</sup> and **x**<sup>3</sup> are plotted on the same axes using the function **plot** taken from the the **matplotlib.pyplot** package. They are given appropriate labels, distinct colors, markers and line dashing so they can be differentiated.
 
@@ -128,7 +128,7 @@ x<sub>n+1</sub> = x<sub>n</sub> - f(x<sub>0</sub>)/f'(x<sub>n</sub>)
 f'(x) = 2x
 
 To get an initial guess for the Newton-Raphson method, **input** is divided by 4 and set as the variable **init**.
-
+c
 The Newton-Raphson method is employed for **iterations** number of iterations  using the following formula in a **while** loop: 
 
 **init** = **init** -((**init**<sup>2</sup> - **input**)/(2 **init**))
